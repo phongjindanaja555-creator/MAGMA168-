@@ -15,13 +15,13 @@
 <nav class="navbar navbar-dark bg-dark">
 <div class="container-fluid">
 <span class="navbar-brand mb-0 h1">
-  &nbsp;&nbsp;<img src="https://sv1.img.in.th/w2dSg.jpg" alt="..." width="50" height="50"/> <!-- เปลี่ยนรูปโลโก้ -->
-  &nbsp;&nbsp;&nbsp;MIAMI999 เว็บตรงอันดับ 1 ในไทย</span><!-- เปลี่ยนชื่อเว็บ -->
+  &nbsp;&nbsp;<img src="https://i.postimg.cc/L56gcjwp/6123080406144847969.jpg" alt="..." width="50" height="50"/> <!-- เปลี่ยนรูปโลโก้ -->
+  &nbsp;&nbsp;&nbsp;MAGMA168 เว็บตรงอันดับ 1 ในไทย</span><!-- เปลี่ยนชื่อเว็บ -->
 </div>
 </nav>
 <div class="card text-center">
 <div class="card-header">
-<button type="button" id="ssdt" class="btn"> <img src="https://sv1.img.in.th/w2PUz.jpg" class="img-fluid" alt="..."></button>
+<button type="button" id="ssdt" class="btn"> <img src="https://i.postimg.cc/8PS06cvb/6188157510095671990.jpg" class="img-fluid" alt="..."></button>
 <div class="card-footer text-muted"><!-- เปลี่ยนรูปรับเครดิตฟรี 900*1800 -->
 มีแอดมินบริการตลอด 24 ชม.
 </div>
@@ -29,15 +29,15 @@
 </div>
 <script>
 window.onload = function (e) {
-liff.init({liffId: "1657080337-aprDQwe8"} , function (){
+liff.init({liffId: "2011702007-axfVIXIJ"} , function (){
 if (liff.isLoggedIn()){
 var iqd = getParameterByName("refer")
 var ss = document.getElementById('ssdt')
 var sd = document.getElementById('iq')
 ss.onclick = () => {
-var cover = "https://sv1.img.in.th/w2PUz.jpg" <!-- เปลี่ยนรูปรับเครดิตฟรี 900*1800 -->
-var line = "https://lin.ee/gwKJYyX"
-var liff = "https://liff.line.me/1657080337-aprDQwe8"
+var cover = "https://i.postimg.cc/8PS06cvb/6188157510095671990.jpg" <!-- เปลี่ยนรูปรับเครดิตฟรี 900*1800 -->
+var line = "https://lin.ee/WlS9qTh"
+var liff = "https://liff.line.me/2011702007-axfVIXIJ"
 var jk = [{
 "type": "flex",
 "altText": "รับเครดิตฟรี 50 บาทง่ายๆ!",
@@ -48,7 +48,7 @@ var jk = [{
   "direction": "ltr",
   "hero": {
     "type": "image",
-    "url": "https://sv1.img.in.th/w22By.jpg",<!-- เปลี่ยนรูปรับเครดิตฟรี 1040*1040 -->
+    "url": "https://i.postimg.cc/hvr6jR2P/6190409309909357141.jpg",<!-- เปลี่ยนรูปรับเครดิตฟรี 1040*1040 -->
     "size": "full",
     "aspectRatio": "1:1",
     "aspectMode": "fit",
@@ -67,7 +67,7 @@ var jk = [{
         "contents": [
           {
             "type": "text",
-            "text": "MIAMI999",
+            "text": "MAGMA168",
             "weight": "bold",
             "size": "xxl",
             "color": "#000000",
@@ -113,7 +113,7 @@ var jk = [{
         "action": {
           "type": "uri",
           "label": "ติดต่อแอดมิน",
-          "uri": "https://lin.ee/gwKJYyX"
+          "uri": "https://lin.ee/WlS9qTh"
         },
         "color": "#CC0000", <!-- เปลี่ยนสีปุ่มติดต่อแอดมิน -->
         "style": "primary",
@@ -124,7 +124,7 @@ var jk = [{
         "action": {
           "type": "uri",
           "label": "เเชร์ให้เพื่อน",
-          "uri": "https://liff.line.me/1657080337-aprDQwe8"
+          "uri": "https://liff.line.me/2011702007-axfVIXIJ"
         },
         "color": "#00CC00",<!-- เปลี่ยนสีปุ่มเเชร์ให้เพื่อน -->
         "height": "md",

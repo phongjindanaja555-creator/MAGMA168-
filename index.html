@@ -184,25 +184,19 @@
           alert("เกิดข้อผิดพลาดในการโหลด LIFF: " + err.message);
         });
 
-      // ฟังก์ชันเปิด Share Target Picker พร้อมแจ้งเตือน Error
-      function shareflex(flex) {
-        if (!liff.isApiAvailable('shareTargetPicker')) {
-          alert("เครื่องหรือเวอร์ชัน LINE ไม่รองรับ หรือยังไม่ได้เปิดสิทธิ์ Share Target Picker");
-          return;
-        }
-
-        liff.shareTargetPicker(flex)
-          .then(function (res) {
-            if (res) {
-              // ถ้าแชร์สำเร็จให้ปิดหน้าต่าง LIFF
-              liff.closeWindow();
-            }
-          })
-          .catch(function (error) {
-            // แจ้ง Error ออกมาเป็นกล่อง Alert หากเกิดปัญหา
-            alert("ไม่สามารถแชร์ได้: " + error.message);
-          });
+function shareflex(flex) {
+  // เรียกใช้คำสั่งแชร์ตรงๆ เพื่อดูว่าติด Error อะไร
+  liff.shareTargetPicker(flex)
+    .then(function (res) {
+      if (res) {
+        liff.closeWindow();
       }
+    })
+    .catch(function (error) {
+      // แสดงข้อความ Error จริงจากระบบ LINE
+      alert("LINE Error Details: " + JSON.stringify(error));
+    });
+}
     };
   </script>
 

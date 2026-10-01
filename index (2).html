@@ -1,191 +1,217 @@
 <!doctype html>
-<html lang="en">
+<html lang="th">
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<title>แนะนำเพื่อนรับเครดิตฟรี 50 บาทอย่าพลาด!!</title>
-<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-</head>
-<body>
-<!-- As a heading -->
-<nav class="navbar navbar-dark bg-dark">
-<div class="container-fluid">
-<span class="navbar-brand mb-0 h1">
-  &nbsp;&nbsp;<img src="https://i.postimg.cc/L56gcjwp/6123080406144847969.jpg" alt="..." width="50" height="50"/> <!-- เปลี่ยนรูปโลโก้ -->
-  &nbsp;&nbsp;&nbsp;MAGMA168 เว็บตรงอันดับ 1 ในไทย</span><!-- เปลี่ยนชื่อเว็บ -->
-</div>
-</nav>
-<div class="card text-center">
-<div class="card-header">
-<button type="button" id="ssdt" class="btn"> <img src="https://i.postimg.cc/8PS06cvb/6188157510095671990.jpg" class="img-fluid" alt="..."></button>
-<div class="card-footer text-muted"><!-- เปลี่ยนรูปรับเครดิตฟรี 900*1800 -->
-มีแอดมินบริการตลอด 24 ชม.
-</div>
-</div>
-</div>
-<script>
-window.onload = function (e) {
-liff.init({liffId: "1657080337-aprDQwe8"} , function (){
-if (liff.isLoggedIn()){
-var iqd = getParameterByName("refer")
-var ss = document.getElementById('ssdt')
-var sd = document.getElementById('iq')
-ss.onclick = () => {
-var cover = "https://i.postimg.cc/8PS06cvb/6188157510095671990.jpg" <!-- เปลี่ยนรูปรับเครดิตฟรี 900*1800 -->
-var line = "https://lin.ee/WlS9qTh"
-var liff = "https://liff.line.me/2011702007-axfVIXIJ"
-var jk = [{
-"type": "flex",
-"altText": "รับเครดิตฟรี 50 บาทง่ายๆ!",
-"contents": 
-  <!-- text  -->
-{
-  "type": "bubble",
-  "direction": "ltr",
-  "hero": {
-    "type": "image",
-    "url": "https://i.postimg.cc/hvr6jR2P/6190409309909357141.jpg",<!-- เปลี่ยนรูปรับเครดิตฟรี 1040*1040 -->
-    "size": "full",
-    "aspectRatio": "1:1",
-    "aspectMode": "fit",
-    "backgroundColor": "#FFFFFFFF"//
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "backgroundColor": "#000000",
-    "contents": [
-      {
-        "type": "box",
-        "layout": "vertical",
-        "backgroundColor": "#FFFFFF",
-        "cornerRadius": "20px",
-        "contents": [
-          {
-            "type": "text",
-            "text": "MAGMA168",
-            "weight": "bold",
-            "size": "xxl",
-            "color": "#000000",
-            "align": "center",
-            "gravity": "center",
-            "contents": []
-          }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "margin": "lg",
-        "contents": [
-          {
-            "type": "text",
-            "text": "เเจกเครดิตฟรี 50 เล่นง่าย",
-            "color": "#FFFFFF",
-            "align": "center",
-            "wrap": true,
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "จ่ายจริงถอนเงินสดได้จริง",
-            "color": "#FFFFFF",
-            "align": "center",
-            "gravity": "center",
-            "contents": []
-          }
-        ]
-      }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "horizontal",
-    "position": "relative",
-    "backgroundColor": "#330033",<!-- เปลี่ยนสีแบล็กกราวปุ่ม -->
-    "contents": [
-      {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "ติดต่อแอดมิน",
-          "uri": "https://lin.ee/WlS9qTh"
-        },
-        "color": "#CC0000", <!-- เปลี่ยนสีปุ่มติดต่อแอดมิน -->
-        "style": "primary",
-        "gravity": "center"
-      },
-      {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "เเชร์ให้เพื่อน",
-          "uri": "https://liff.line.me/2011702007-axfVIXIJ"
-        },
-        "color": "#00CC00",<!-- เปลี่ยนสีปุ่มเเชร์ให้เพื่อน -->
-        "height": "md",
-        "style": "primary"
-      }
-    ]
-  },
-  "styles": {
-    "hero": {
-      "backgroundColor": "#000000",
-      "separator": true,
-      "separatorColor": "#000000"
-    },
-    "body": {
-      "backgroundColor": "#000000",
-      "separator": true,
-      "separatorColor": "#000000"
-    },
-    "footer": {
-      "backgroundColor": "#000000",
-      "separator": true,
-      "separatorColor": "#000000"
-    }
-  }
-}
-}]
-shareflex(jk)
-}
-} else {
-liff.login()
-}
-})
-function sendflex(flex){
-liff.sendMessages(flex).then(function (){
-liff.closeWindow()
-})
-}
-function shareflex(flex){
-liff.shareTargetPicker(flex).then(function (){
-liff.closeWindow()
-})
-}
-function getParameterByName(name, url) {
-if (!url) url = window.location.href;
-name = name.replace(/[\[\]]/g, '\\$&');
-var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-results = regex.exec(url);
-if (!results) return null;
-if (!results[2]) return '';
-return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-}
-</script>
-<!-- Optional JavaScript; choose one of the two! -->
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
--->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Go for it</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday Prices",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 22px; font-weight: 700; text-transform: uppercase;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Get 90% Off!",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Get Web Hosting for $0.99/month + SSL Certificate for FREE!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 15px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2020-wp-inject-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASj"
+    crossorigin="anonymous"
+  >
+
+  <title>แนะนำเพื่อนรับเครดิตฟรี&โค้ดฟรีสปิน อย่าพลาด!!</title>
+
+  <!-- LINE LIFF SDK -->
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ส่วนหัวเว็บไซต์ -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">
+        <img
+          src="https://i.postimg.cc/L56gcjwp/6123080406144847969.jpg"
+          alt="Logo"
+          width="50"
+          height="50"
+        >
+        &nbsp;&nbsp;&nbsp;MAGMA168 เว็บตรงอันดับ 1 ในไทย
+      </span>
+    </div>
+  </nav>
+
+  <!-- ส่วน Banner / ปุ่มแชร์ -->
+  <div class="card text-center">
+    <div class="card-header">
+      <button type="button" id="ssdt" class="btn">
+        <img
+          src="https://i.postimg.cc/8PS06cvb/6188157510095671990.jpg"
+          class="img-fluid"
+          alt="โปรโมชั่น"
+        >
+      </button>
+      <div class="card-footer text-muted">
+        มีแอดมินบริการตลอด 24 ชม.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function (e) {
+      // 1. เริ่มต้น LIFF ด้วย Promise Style
+      liff.init({ liffId: "2011702007-axfVIXIJ" })
+        .then(() => {
+          // ตรวจสอบสถานะ Login
+          if (!liff.isLoggedIn()) {
+            liff.login();
+            return;
+          }
+
+          // ผูกอีเวนต์กดปุ่มแชร์
+          var ss = document.getElementById("ssdt");
+          ss.onclick = () => {
+            
+            // โครงสร้าง Flex Message ที่แก้ไขจุดผิดแล้ว
+            var jk = [
+              {
+                "type": "flex",
+                "altText": "รับเครดิตฟรี & โค้ดฟรีสปิน ง่ายๆ!",
+                "contents": {
+                  "type": "bubble",
+                  "direction": "ltr",
+                  "hero": {
+                    "type": "image",
+                    "url": "https://i.postimg.cc/hvr6jR2P/6190409309909357141.jpg",
+                    "size": "full",
+                    "aspectRatio": "1:1",
+                    "aspectMode": "fit",
+                    "backgroundColor": "#FFFFFFFF"
+                  },
+                  "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "backgroundColor": "#000000",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "backgroundColor": "#FFFFFF",
+                        "cornerRadius": "20px",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "MAGMA168",
+                            "weight": "bold",
+                            "size": "xxl",
+                            "color": "#000000",
+                            "align": "center",
+                            "gravity": "center"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "margin": "lg",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "เเจกเครดิตฟรี & โค้ดฟรีสปิน เล่นง่าย",
+                            "color": "#FFFFFF",
+                            "align": "center",
+                            "wrap": true
+                          },
+                          {
+                            "type": "text",
+                            "text": "จ่ายจริงถอนเงินสดได้จริง",
+                            "color": "#FFFFFF",
+                            "align": "center",
+                            "gravity": "center"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "footer": {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "position": "relative",
+                    "backgroundColor": "#330033",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "uri",
+                          "label": "ติดต่อแอดมิน",
+                          "uri": "https://lin.ee/WlS9qTh"
+                        },
+                        "color": "#CC0000",
+                        "style": "primary",
+                        "gravity": "center"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "uri",
+                          "label": "เเชร์ให้เพื่อน",
+                          "uri": "https://liff.line.me/2011702007-axfVIXIJ"
+                        },
+                        "color": "#00CC00",
+                        "height": "md",
+                        "style": "primary"
+                      }
+                    ]
+                  },
+                  // แก้ไขจุดนี้: ตัด separator ออกแล้วเก็บไว้เฉพาะ backgroundColor
+                  "styles": {
+                    "hero": {
+                      "backgroundColor": "#000000"
+                    },
+                    "body": {
+                      "backgroundColor": "#000000"
+                    },
+                    "footer": {
+                      "backgroundColor": "#000000"
+                    }
+                  }
+                }
+              }
+            ];
+
+            // เรียกใช้งาน Share Target Picker
+            shareflex(jk);
+          };
+        })
+        .catch((err) => {
+          alert("เกิดข้อผิดพลาดในการโหลด LIFF: " + err.message);
+        });
+
+      // ฟังก์ชันเปิด Share Target Picker พร้อมแจ้งเตือน Error
+      function shareflex(flex) {
+        if (!liff.isApiAvailable('shareTargetPicker')) {
+          alert("เครื่องหรือเวอร์ชัน LINE ไม่รองรับ หรือยังไม่ได้เปิดสิทธิ์ Share Target Picker");
+          return;
+        }
+
+        liff.shareTargetPicker(flex)
+          .then(function (res) {
+            if (res) {
+              // ถ้าแชร์สำเร็จให้ปิดหน้าต่าง LIFF
+              liff.closeWindow();
+            }
+          })
+          .catch(function (error) {
+            // แจ้ง Error ออกมาเป็นกล่อง Alert หากเกิดปัญหา
+            alert("ไม่สามารถแชร์ได้: " + error.message);
+          });
+      }
+    };
+  </script>
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+
+</body>
 </html>

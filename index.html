@@ -185,18 +185,17 @@
         });
 
 function shareflex(flex) {
-  // สั่งเปิด Share Target Picker โดยตรง
+  // เรียกใช้งาน Share Target Picker โดยตรง
   liff.shareTargetPicker(flex)
     .then(function (res) {
       if (res) {
-        // หากผู้ใช้กดแชร์สำเร็จ ให้ปิดหน้าต่าง LIFF
+        // แชร์สำเร็จให้ปิดหน้าต่าง LIFF
         liff.closeWindow();
       }
     })
     .catch(function (error) {
-      // แสดงข้อความหากเกิดข้อผิดพลาดจริง
       console.error("Share error:", error);
-      alert("ไม่สามารถแชร์ได้: " + error.message);
+      alert("เกิดข้อผิดพลาด: " + error.message);
     });
 }
     };

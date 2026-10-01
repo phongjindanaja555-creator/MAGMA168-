@@ -185,16 +185,24 @@
         });
 
 function shareflex(flex) {
-  // เรียกใช้คำสั่งแชร์ตรงๆ เพื่อดูว่าติด Error อะไร
+  // เช็กว่าเครื่องหรือเวอร์ชัน LINE รองรับฟังก์ชันแชร์ไหม
+  if (!liff.isApiAvailable('shareTargetPicker')) {
+    alert("ระบบไม่รองรับการแชร์ หรือยังไม่ได้เปิดสิทธิ์ Share Target Picker");
+    return;
+  }
+
+  // เรียกใช้งาน Share Target Picker
   liff.shareTargetPicker(flex)
     .then(function (res) {
       if (res) {
+        // หากผู้ใช้เลือกเพื่อนและกดแชร์สำเร็จ ให้ปิดหน้าต่าง LIFF
         liff.closeWindow();
       }
     })
     .catch(function (error) {
-      // แสดงข้อความ Error จริงจากระบบ LINE
-      alert("LINE Error Details: " + JSON.stringify(error));
+      // แสดง alert กรณีเกิด Error จริงๆ เท่านั้น
+      console.error("Share error:", error);
+      alert("เกิดข้อผิดพลาดในการแชร์: " + error.message);
     });
 }
     };
